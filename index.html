@@ -116,34 +116,68 @@
           </div>
         </section>
     <!--Directions-->
-      <!--  <section class="directions"> 
+      <section class="directions"> 
           <div class="container">
-            <h2 class="title">Чем мы занимаемся</h2>
+            <h2 class="directions__title">Чем мы занимаемся</h2>
                <ul class="directions__list list">
                     <li class="directions__item">
-                        <img class="directions__img" src="./images/1.jpg" alt="работа за клавиатурой" width="370" height="294">
+                      <picture class="directions__img">
+                        <source 
+                        srcset="./images/directions/1.webp 1x, ./images/directions/1@2x.webp 2x" 
+                        media="(min-width: 1200px)" type="image/webp">
+                        <source 
+                        srcset="./images/directions/1.jpg 1x, ./images/directions/1@2x.jpg 2x" 
+                         media="(min-width: 1200px)">
+                        <img class="directions__img" src="./images/directions/1.jpg" alt="работа за клавиатурой" width="370" height="294">
+                      </picture>
                     <p class="directions__text">Десктопные приложения</p>
+                 
                       </li>
                     <li class="directions__item">
-                        <img class="directions__img" src="./images/2.jpg" alt="работа с мобильного" width="370" height="294">
+                      <picture class="directions__img">
+                        <source srcset="./images/directions/2.webp 1x, ./images/directions/2@2x.webp 2x" 
+                        media="(min-width: 1200px)" type="image/webp">
+                        <source srcset="./images/directions/2.jpg 1x, ./images/directions/2@2x.jpg 2x"
+                         media="(min-width: 1200px)">
+                        <img class="directions__img" src="./images/directions/2.jpg" alt="работа с мобильного" width="370" height="294">
+                      </picture>
                    <p class="directions__text">Мобильные приложения</p>
                       </li>
                     <li class="directions__item">
-                        <img class="directions__img" src="./images/3.jpg" alt="работа с планшета" width="370" height="294">
+                      <picture class="directions__img">
+                        <source srcset="./images/directions/3.webp 1x, ./images/directions/3@2x.webp 2x" 
+                        media="(min-width: 1200px)" type="image/webp">
+                        <source srcset="./images/directions/3.jpg 1x, ./images/directions/3@2x.jpg 2x" 
+                        media="(min-width: 1200px)">
+                        <img class="directions__img" src="./images/directions/3.jpg" alt="работа с планшета" width="370" height="294">
+                      </picture>
                    <p class="directions__text">Дизайнерские решения</p>
                       </li>
                </ul>
           </div>
-        </section>-->    
+        </section>    
     <!--Command-->
-              <!--  <section class="command">
+              <section class="command">
                   <div class="container">
-                    <h2 class="title">Наша команда</h2>
+                    <h2 class="command__title">Наша команда</h2>
                     <ul class="command__list list">
                       
                         <li class="command__item" >
-                          <img class="command__photo" src="./images/igor.jpg" alt="Игорь Демьяненко" 
-                            width="270" height="260">
+                        <picture class="command__photo">
+                        <source srcset="./images/command/igor-mobile.webp 1x, ./images/command/igor-mobile@2x.webp 2x"
+                           media="(min-width: 320px)" type="image/webp">
+                        <source srcset="./images/command/igor-mobile.jpg 1x, ./images/command/igor-mobile@2x.jpg 2x" 
+                           media="(min-width: 320px)">
+                        <source srcset="./images/command/igor-tablet.webp 1x, ./images/command/igor-tablet@2x.webp 2x"
+                            media="(min-width: 768px)" type="image/webp">
+                        <source srcset="./images/command/igor-tablet.jpg 1x, ./images/command/igor-tablet@2x.jpg 2x" 
+                          media="(min-width: 768px)">
+                        <source srcset="./images/command/igor-desk.webp 1x, ./images/command/igor-desk@2x.webp 2x"
+                              media="(min-width: 1200px)" type="image/webp">
+                        <source srcset="./images/command/igor-desk.jpg 1x, ./images/command/igor-desk@2x.jpg 2x"
+                             media="(min-width: 1200px)">
+                        <img class="command__photo" src="./images/command/igor-mobile.jpg" alt="Игорь Демьяненко" >
+                        </picture>
                             <div class="command__info">
                                <h3 class="command__names">Игорь Демьяненко</h3>
                                <p class="command__position">Product Designer</p>
@@ -181,7 +215,22 @@
                         </li>
                        
                         <li class="command__item">
-                          <img class="command__photo" src="./images/olha.jpg" alt="Ольга Репина" width="270" height="260">
+                          <picture class="command__photo">
+                          <source srcset="./images/command/olga-mobile.webp 1x, ./images/command/olga-mobile@2x.webp 2x"
+                            media="(min-width: 320px)" type="image/webp">
+                          <source srcset="./images/command/olga-mobile.jpg 1x, ./images/command/olga-mobile@2x.jpg 2x"
+                            media="(min-width: 320px)">
+                          <source srcset="./images/command/olga-tablet.webp 1x, ./images/command/olga-tablet@2x.webp 2x"
+                            media="(min-width: 768px)" type="image/webp">
+                          <source srcset="./images/command/olga-tablet.jpg 1x, ./images/command/olga-tablet@2x.jpg 2x"
+                            media="(min-width: 768px)">
+                          <source srcset="./images/command/olga-desk.webp 1x, ./images/command/olga-desk@2x.webp 2x"
+                           media="(min-width: 1200px)" type="image/webp">
+                          <source srcset="./images/command/olga-desk.jpg 1x, ./images/command/olga-desk@2x.jpg 2x" 
+                          media="(min-width: 1200px)">
+                          <img class="command__photo" src="./images/command/olga-mobile.jpg" alt="Ольга Репина">
+                        </picture>
+                          
                             <div class="command__info">
                                <h3 class="command__names">Ольга Репина</h3>
                                <p class="command__position">Frontend Developer</p>
@@ -219,7 +268,21 @@
                         </li>
                         
                         <li class="command__item" >
-                          <img class="command__photo" src="./images/nik.jpg" alt="Николай Тарасов" width="270" height="260">
+                          <picture class="command__photo">
+                          <source srcset="./images/command/nick-mobile.webp 1x, ./images/command/nick-mobile@2x.webp 2x"
+                            media="(min-width: 320px)" type="image/webp">
+                          <source srcset="./images/command/nick-mobile.jpg 1x, ./images/command/nick-mobile@2x.jpg 2x"
+                            media="(min-width: 320px)">
+                          <source srcset="./images/command/nick-tablet.webp 1x, ./images/command/nick-tablet@2x.webp 2x"
+                            media="(min-width: 768px)" type="image/webp">
+                          <source srcset="./images/command/nick-tablet.jpg 1x, ./images/command/nick-tablet@2x.jpg 2x"
+                            media="(min-width: 768px)">
+                          <source srcset="./images/command/nick-desk.webp 1x, ./images/command/nick-desk@2x.webp 2x" 
+                          media="(min-width: 1200px)" type="image/webp">
+                          <source srcset="./images/command/nick-desk.jpg 1x, ./images/command/nick-desk@2x.jpg 2x"
+                           media="(min-width: 1200px)">
+                          <img class="command__photo" src="./images/command/nick-mobile.jpg" alt="Николай Тарасов">
+                          </picture>
                             <div class="command__info">
                                <h3 class="command__names">Николай Тарасов</h3>
                                <p class="command__position">Marketing</p>
@@ -257,7 +320,22 @@
                         </li>
                         
                         <li class="command__item" >
-                          <img class="command__photo" src="./images/misha.jpg" alt="Михаил Ермаков" width="270" height="260">
+                          <picture class="command__photo">
+                            <source srcset="./images/command/misha-mobile.webp 1x, ./images/command/misha-mobile@2x.webp 2x"
+                              media="(min-width: 320px)" type="image/webp">
+                            <source srcset="./images/command/misha-mobile.jpg 1x, ./images/command/misha-mobile@2x.jpg 2x"
+                              media="(min-width: 320px)">
+                            <source srcset="./images/command/misha-tablet.webp 1x, ./images/command/misha-tablet@2x.webp 2x"
+                              media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./images/command/misha-tablet.jpg 1x, ./images/command/misha-tablet@2x.jpg 2x"
+                              media="(min-width: 768px)">
+                            <source srcset="./images/command/misha-desk.webp 1x, ./images/command/misha-desk@2x.webp 2x" 
+                            media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./images/command/misha-desk.jpg 1x, ./images/command/misha-desk@2x.jpg 2x"
+                            media="(min-width: 1200px)">
+                            <img class="command__photo" src="./images/command/misha-mobile.jpg" alt="Михаил Ермаков">
+                          </picture>
+                          
                             <div class="command__info">
                                <h3 class="command__names">Михаил Ермаков</h3>
                                <p class="command__position">UI Designer</p>
@@ -295,7 +373,7 @@
                         </li>
                     </ul>
                   </div>
-                </section> -->   
+                </section>   
    <!--Clients-->     
    <!--<section class="clients">
      <div class="container">
