@@ -1,6 +1,35 @@
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ececec;
+}
+.header__logo {
+  width: 134px;
+  height: 28px;
+  margin-left: 15px;
+}
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.menu-button .icon-close {
+  display: none;
+}
+.menu-button .is-open .icon-close {
+  display: block;
+}
+.menu-button .is-open .icon-menu {
+  display: none;
+}
+/* .header {
+  display: flex;
+  align-items: center;
   padding-top: 23px;
   padding-bottom: 23px;
   border-bottom: 1px solid #ececec;
@@ -88,3 +117,4 @@
 .address {
   font-style: normal;
 }
+ */
