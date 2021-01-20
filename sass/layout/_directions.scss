@@ -8,9 +8,8 @@
 }
 @media screen and (min-width: 1200px) {
   .directions {
-    display: inline;
+    display: block;
     padding-bottom: 94px;
-    padding-top: 94px;
   }
   .directions__list {
     display: flex;
