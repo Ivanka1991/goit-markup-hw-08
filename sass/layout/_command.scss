@@ -82,18 +82,21 @@
   .command__list {
     display: flex;
     flex-wrap: wrap;
-
-    margin-right: -30px;
   }
   .command__photo {
     width: 354px;
     height: 374px;
   }
-  .command__item {
-    margin-right: 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .command__item:nth-child(2n) {
+    margin-left: 30px;
+  }
+  .command__item:nth-child(-n + 2) {
     margin-bottom: 30px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .command__list {
     justify-content: space-between;
@@ -108,5 +111,6 @@
   }
   .command__title {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }

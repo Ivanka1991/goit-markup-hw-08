@@ -153,10 +153,13 @@
   }
   .footer__box {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
   }
   .footer__form-mail {
     width: 358px;
+  }
+  .footer {
+    text-align: left;
   }
 }

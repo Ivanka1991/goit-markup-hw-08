@@ -1,7 +1,9 @@
 .examples__img {
-  width: 450px;
-  height: 294px;
+  max-height: 100%;
+  max-width: 100%;
+  align-items: flex-start;
 }
+
 .examples__content {
   padding: 20px 24px;
 }

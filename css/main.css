@@ -515,7 +515,8 @@ img {
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
-  background-size: 480px 400px;
+  /* background-size: cover;
+ */
 }
 
 .hero__heading {
@@ -554,6 +555,7 @@ img {
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-img/hero-mobile@2x.jpg");
+    background-size: cover;
   }
 }
 
@@ -828,14 +830,18 @@ img {
   .command__list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
   }
   .command__photo {
     width: 354px;
     height: 374px;
   }
-  .command__item {
-    margin-right: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .command__item:nth-child(2n) {
+    margin-left: 30px;
+  }
+  .command__item:nth-child(-n + 2) {
     margin-bottom: 30px;
   }
 }
@@ -854,6 +860,7 @@ img {
   }
   .command__title {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 
@@ -904,6 +911,12 @@ img {
   fill: var(--accent-color);
   background-color: var(--third-color-text);
   border-color: var(--accent-color);
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .clients__list {
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -1117,11 +1130,14 @@ img {
   }
   .footer__box {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
   }
   .footer__form-mail {
     width: 358px;
+  }
+  .footer {
+    text-align: left;
   }
 }
 
@@ -1184,8 +1200,9 @@ img {
 }
 
 .examples__img {
-  width: 450px;
-  height: 294px;
+  max-height: 100%;
+  max-width: 100%;
+  align-items: flex-start;
 }
 
 .examples__content {

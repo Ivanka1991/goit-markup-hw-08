@@ -9,7 +9,8 @@
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
-  background-size: 480px 400px;
+  /* background-size: cover;
+ */
 }
 .hero__heading {
   font-size: 26px;
@@ -51,6 +52,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url("../images/hero-img/hero-mobile@2x.jpg");
+    background-size: cover;
   }
 }
 @media screen and (min-width: 768px) {
